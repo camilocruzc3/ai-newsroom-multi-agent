@@ -1,0 +1,11 @@
+flowchart TD
+  U[Human editor] --> O[Workflow coordinator]
+  M[(Editorial memory)] --> R[Research stage]
+  O --> R
+  R --> C[Editorial stage]
+  C --> P[Production and QA]
+  P --> V[Deterministic validation]
+  V --> H{Human approval}
+  H -->|Revise| C
+  H -->|Approve| D[Delivery adapter]
+  D --> M
