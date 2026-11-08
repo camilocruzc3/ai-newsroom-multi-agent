@@ -24,6 +24,6 @@ Email is an irreversible external side effect. A human should approve exact cont
 
 Audio narration improves accessibility but adds generation latency, cost, hosting and retention obligations. The public version does not generate or upload audio.
 
-## Public/private separation
+## Scope of included components
 
-The public code is reconstructed from general engineering concepts instead of copying the full original tree or its Git history. The public README distinguishes demonstrated private capabilities from executable public functionality.
+The included Python examples demonstrate editorial checks and edition lifecycle transitions. Other elements of the full workflow are described in the architecture and illustrated in the application gallery.
