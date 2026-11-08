@@ -7,7 +7,6 @@ This is a portfolio case study, not a drop-in newsroom product.
 - Illustrative state transitions do not enforce a production-grade authorization protocol.
 - Editorial text checks cannot determine factual accuracy or source credibility.
 - URL checks validate only syntax and allowed schemes, not destination safety.
-- No private screenshots or client-derived output are published.
 - Performance, operational readiness and full integration tests are not claimed.
 
-The private project and the public sample have different scopes by design.
+The screenshots document the application interface; the included Python samples demonstrate a narrower set of reusable concepts.
