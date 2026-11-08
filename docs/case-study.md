@@ -20,6 +20,6 @@ The private project distributes work across specialized research, editorial and 
 
 External model and voice services introduce cost, availability and data-governance dependencies. Deterministic checks cannot establish factual truth or editorial quality. Email compatibility varies by client. A local tool requires access and operational controls before broader deployment.
 
-## Public reconstruction
+## Technical scope
 
-The complete private application is intentionally omitted. This repository provides architecture, engineering decisions, synthetic examples and new, generic code examples that demonstrate bounded validations and state transitions. No specific client or deployment outcome is claimed.
+This case study combines the editorial architecture, design decisions, application screenshots and standalone examples of validation and lifecycle management.
