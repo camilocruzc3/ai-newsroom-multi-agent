@@ -1,26 +1,19 @@
 # Security and privacy
 
-## Public-repository boundary
+## Trust boundaries
 
-Do not include private customer names, logos, identifiable emails, recipient lists, internal URLs, provider secrets, authentication tokens, operational logs, audio artifacts, published private newsletters, production prompts or client-specific business rules.
+The editorial system separates source retrieval, model-generated content, local validation, human approval and outbound delivery.
 
-The public project starts with a separate Git history. Copying a private repository and deleting sensitive files from its current working tree would **not** remove those files from older commits.
+- External content and model outputs are treated as untrusted inputs.
+- Application credentials are loaded from local environment settings rather than embedded in source code.
+- Research and drafting stages do not directly authorize delivery.
+- Recipients and final content are reviewed before distribution.
+- Operational state supports inspection of the editorial workflow.
 
-## Runtime boundary (architecture guidance)
+## Engineering considerations
 
-- Inject credentials through environment variables or a managed secret store.
-- Separate local draft preparation from side-effecting delivery.
-- Treat retrieved pages and documents as untrusted input, including prompt-injection attempts.
-- Review source URLs before remote access and prevent unsafe redirect/network behavior.
-- Validate recipient data and require authorization of the specific edition and audience.
-- Limit logging of user, source and delivery data; define retention.
-- Apply rate limits, concurrency controls, retries and idempotency where appropriate.
-- Require independent assessment before real-world deployment.
+A production deployment benefits from destination validation, secure token storage, access controls, bounded logs, explicit data retention, retries, idempotency and monitoring. External news content may contain prompt-injection attempts or misleading source material; review and technical controls mitigate but do not eliminate these risks.
 
-## Rights and licensing
+## Public example scope
 
-Sanitization alone does not prove that client-related source or visual assets may be republished. Confirm contractual, intellectual-property and workplace obligations before using screenshots or derived implementation material. MIT covers only this new public portfolio repository.
-
-## Known boundary
-
-No production security audit has been performed on this miniature public example; it does not send emails or make model/API calls.
+The standalone Python modules demonstrate validation and lifecycle concepts only; they do not implement authentication, secure network access or a production delivery service.
