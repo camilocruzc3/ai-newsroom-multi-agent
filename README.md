@@ -1,10 +1,10 @@
 # AI Newsroom — Multi-Agent Newsletter System
 
-**Multi-agent editorial workflow | Architecture, case study and selected Python components**
+**Working multi-agent editorial automation application | Architecture and selected Python components**
 
-AI Newsroom documents an AI-assisted editorial workflow that researches recent news, evaluates sources, produces accessible summaries, prepares audio scripts and assembles an email newsletter for human approval. This case study explores the architecture and engineering decisions of a working editorial system.
+AI Newsroom is a working Python-based multi-agent application for researching and verifying news, drafting editorial content, generating audio scripts and preparing HTML newsletters through coordinated specialist agents and human-in-the-loop approval. This repository presents its architecture, workflow and engineering decisions.
 
-> **Repository scope:** Architecture documentation, application screenshots, a synthetic example and selected standalone Python components. The complete end-to-end application is not included.
+> **Public repository scope:** Technical case study, application screenshots, architecture documentation, a synthetic example and selected standalone Python components. The complete end-to-end application is not included.
 
 ## Problem and approach
 
