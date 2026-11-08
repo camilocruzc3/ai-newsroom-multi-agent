@@ -89,6 +89,20 @@ $env:PYTHONPATH = "src"
 python -m unittest discover -s tests -v
 ```
 
+## Application preview
+
+The private working application includes a local editorial workspace and a staged review process. A curated, privacy-screened set of 12 screenshots has been prepared for the public portfolio, covering:
+
+- **Editorial workspace:** an overview of the three specialized stages and a selected edition.
+- **Workflow states:** a new edition before execution and a completed edition after the stages finish.
+- **Specialized agents:** research, editorial drafting and production / quality review.
+- **Editorial evidence:** a story package, source-research diagnostics and HTML newsletter preview.
+- **Human approval:** recipient review, controlled test sends and final delivery controls.
+
+Screenshots are illustrative views of the private prototype; the public `src/` code contains only limited reconstructed examples, not the full app. No production account or credential screens will be included.
+
+> **Gallery publication:** The vetted screenshot files are prepared separately for upload to `assets/screenshots/`. The gallery image links will be enabled after the image files are present in this repository. See [screenshot manifest](assets/screenshots/README.md).
+
 ## Documentation
 
 - [Case study](docs/case-study.md)
