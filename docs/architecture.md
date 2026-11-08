@@ -33,4 +33,4 @@ flowchart LR
 
 Treat retrieved news and model outputs as untrusted. Keep credentials in local environment storage; avoid propagating private recipients into research prompts; separate review from external delivery; retain bounded logs without secret-bearing payloads.
 
-This diagram documents a private system's pattern. Only small independent components of the pattern are implemented in this repository.
+The diagram summarizes the coordinated stages; selected standalone components are available in `src/ai_newsroom`.
