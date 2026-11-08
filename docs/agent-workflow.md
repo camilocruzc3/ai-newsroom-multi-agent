@@ -17,4 +17,4 @@
 - Review misleading headlines, unsourced figures and repetitive sections.
 - Make final audience review and approval explicit.
 
-A model may propose an output; a local system should determine whether an action is permitted. This public repository implements only illustrative lifecycle and editorial validation primitives.
+A model may propose an output; a local system should determine whether an action is permitted. The standalone Python examples illustrate lifecycle transitions and editorial validation.
