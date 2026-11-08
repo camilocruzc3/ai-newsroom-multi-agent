@@ -91,17 +91,59 @@ python -m unittest discover -s tests -v
 
 ## Application preview
 
-The private working application includes a local editorial workspace and a staged review process. A curated, privacy-screened set of 12 screenshots has been prepared for the public portfolio, covering:
+The screenshots below show selected, sanitized views of the **private working application**. They illustrate the actual editorial workflow; the public source code contains only independent reconstructed components and is not the full application.
 
-- **Editorial workspace:** an overview of the three specialized stages and a selected edition.
-- **Workflow states:** a new edition before execution and a completed edition after the stages finish.
-- **Specialized agents:** research, editorial drafting and production / quality review.
-- **Editorial evidence:** a story package, source-research diagnostics and HTML newsletter preview.
-- **Human approval:** recipient review, controlled test sends and final delivery controls.
+### Editorial workspace
 
-Screenshots are illustrative views of the private prototype; the public `src/` code contains only limited reconstructed examples, not the full app. No production account or credential screens will be included.
+The local interface coordinates three specialized agents and keeps an edition ready for human review.
 
-> **Gallery publication:** The vetted screenshot files are prepared separately for upload to `assets/screenshots/`. The gallery image links will be enabled after the image files are present in this repository. See [screenshot manifest](assets/screenshots/README.md).
+![Editorial workspace showing three specialized agents](assets/screenshots/01-editorial-workspace.jpg)
+
+### Multi-agent workflow
+
+The research, drafting and production stages have explicit statuses and handoffs.
+
+| Start of workflow | Completed workflow |
+| --- | --- |
+| ![Workflow before execution](assets/screenshots/02-workflow-start.jpg) | ![Workflow after all three agents complete](assets/screenshots/03-workflow-completed.jpg) |
+
+### Specialized agents
+
+| Research agent | Editorial agent | Production / QA agent |
+| --- | --- | --- |
+| ![Research stage](assets/screenshots/04-research-agent.jpg) | ![Editorial drafting stage](assets/screenshots/05-editorial-agent.jpg) | ![Production and quality assurance stage](assets/screenshots/06-production-agent.jpg) |
+
+### Editorial content and newsletter output
+
+The story review exposes article summaries, source references, practical implications and an audio narration script. The newsletter preview shows the formatted output before any delivery action.
+
+**Structured editorial package**
+
+![Editorial package with sourced news and audio script](assets/screenshots/07-editorial-package.jpg)
+
+**Rendered email newsletter**
+
+![Newsletter HTML preview](assets/screenshots/08-newsletter-preview.jpg)
+
+### Human approval and controlled delivery
+
+Recipients and content must be reviewed before authorizing the edition. Test email and final delivery are presented as separate operations.
+
+**Approval gate**
+
+![Recipient list and manual approval controls](assets/screenshots/09-approval-gate.jpg)
+
+**Test and final delivery controls**
+
+![Separated test email and final distribution controls](assets/screenshots/10-delivery-controls.jpg)
+
+### Edition setup and research diagnostics
+
+| Create a new edition | Research diagnostics |
+| --- | --- |
+| ![Edition setup form](assets/screenshots/11-new-edition.jpg) | ![Research verification diagnostics](assets/screenshots/12-research-diagnostics.jpg) |
+
+All images are demonstration views; they are not an executable demo of the partial public code. See [image manifest](assets/screenshots/README.md) and [security notes](docs/security.md).
 
 ## Documentation
 
