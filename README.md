@@ -1,10 +1,10 @@
 # AI Newsroom — Multi-Agent Newsletter System
 
-**Public portfolio case study | Selected reconstructed components | Not the full private application**
+**Multi-agent editorial workflow | Architecture, case study and selected Python components**
 
-AI Newsroom documents an AI-assisted editorial workflow that researches recent news, evaluates sources, produces accessible summaries, prepares audio scripts and assembles an email newsletter for human approval. This public repository presents the engineering approach behind a private working project, without releasing its original client configuration, templates, distribution records or source history.
+AI Newsroom documents an AI-assisted editorial workflow that researches recent news, evaluates sources, produces accessible summaries, prepares audio scripts and assembles an email newsletter for human approval. This case study explores the architecture and engineering decisions of a working editorial system.
 
-> **Scope:** The source code here is a small, independent educational reconstruction of reusable validation and workflow concepts. It does **not** implement the complete multi-agent research, email delivery, audio generation or web application. The underlying private project is not included.
+> **Repository scope:** Architecture documentation, application screenshots, a synthetic example and selected standalone Python components. The complete end-to-end application is not included.
 
 ## Problem and approach
 
@@ -32,7 +32,7 @@ flowchart TD
 
 The diagram is architectural, not a claim that every stage executes autonomously without review.
 
-## What the private implementation demonstrates
+## System capabilities
 
 - Python-based orchestration of specialized editorial agents.
 - Source-centered research and traceability of reported facts.
@@ -43,7 +43,7 @@ The diagram is architectural, not a claim that every stage executes autonomously
 - A local interface for running, inspecting and approving editions.
 - Persistence of edition state and explicit validation gates.
 
-External integrations in the private implementation include model APIs, audio synthesis, object storage and email. The public components do not call any external services.
+The system integrates model APIs, audio synthesis, object storage and email delivery. The standalone examples in this repository do not invoke external services.
 
 ## Public repository structure
 
@@ -55,7 +55,7 @@ docs/
   agent-workflow.md          Responsibilities and review gates
   case-study.md              Challenge, implementation and lessons
   technical-decisions.md     Engineering trade-offs
-  security.md                Publication and runtime controls
+  security.md                Security architecture and boundaries
   limitations.md             What is and is not available
   roadmap.md                 Potential extensions
 examples/
@@ -72,9 +72,9 @@ LICENSE
 README.md
 ```
 
-## Public code: small, testable, independent examples
+## Selected Python components
 
-The Python modules in `src/ai_newsroom` demonstrate two reusable patterns: validating editorial inputs and enforcing a conservative edition-state transition model. They are newly written for this portfolio and are **not** copies of the client-specific implementation.
+The Python modules in `src/ai_newsroom` illustrate two reusable patterns: editorial input validation and conservative edition-state transitions.
 
 Run the examples with Python 3.11+ (no API key required):
 
@@ -91,7 +91,7 @@ python -m unittest discover -s tests -v
 
 ## Application preview
 
-The screenshots below show selected, sanitized views of the **private working application**. They illustrate the actual editorial workflow; the public source code contains only independent reconstructed components and is not the full application.
+The screenshots illustrate the editorial workspace, specialized agents, article preparation, newsletter preview and approval workflow.
 
 ### Editorial workspace
 
@@ -143,7 +143,7 @@ Recipients and content must be reviewed before authorizing the edition. Test ema
 | --- | --- |
 | ![Edition setup form](assets/screenshots/11-new-edition.jpg) | ![Research verification diagnostics](assets/screenshots/12-research-diagnostics.jpg) |
 
-All images are demonstration views; they are not an executable demo of the partial public code. See [image manifest](assets/screenshots/README.md) and [security notes](docs/security.md).
+
 
 ## Documentation
 
@@ -156,11 +156,9 @@ All images are demonstration views; they are not an executable demo of the parti
 - [Roadmap](docs/roadmap.md)
 - [Synthetic sample newsletter](examples/synthetic-newsletter.md)
 
-## Security and client confidentiality
+## Security and privacy
 
-The public repository intentionally omits original branding and logos, recipient lists, private emails, real edition history, business-specific prompts, operational logs, internal domains, service endpoints, API keys, audio assets, private production HTML and the original repository's commit history. All examples are synthetic.
-
-Publishing a sanitized technical reconstruction does not itself establish rights to disclose client-owned material. Confirm applicable ownership and contractual restrictions before adding original screenshots, implementation files or client-derived artifacts.
+The workflow separates research, editorial review, human authorization and external delivery. See [Security and privacy](docs/security.md) for the architectural safeguards and trust boundaries.
 
 ## Portfolio context
 
